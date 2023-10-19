@@ -1,0 +1,108 @@
+openapi: 3.0.3
+info:
+  title: Reeesending Test
+  version: 1.0.0
+  description: 'Reeesending Test is the email platform for developers.'
+servers:
+  - url: https://api.resend.com
+security:
+  - bearerAuth: []
+tags:
+  - name: API Keys
+    description: Create and manage API Keys through the Reeesending Test API.
+paths:
+  /api-keys:
+    post:
+      tags:
+        - API Keys
+      summary: Create a new API key
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateApiKeyRequest'
+      responses:
+        '201':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CreateApiKeyResponse'
+    get:
+      tags:
+        - API Keys
+      summary: Retrieve a list of API keys
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ListApiKeysResponse'
+  /api-keys/{api_key_id}:
+    delete:
+      tags:
+        - API Keys
+      summary: Remove an existing API key
+      parameters:
+        - name: api_key_id
+          in: path
+          required: true
+          schema:
+            type: string
+            description: The API key ID.
+      responses:
+        '200':
+          description: OK
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+  schemas:
+    CreateApiKeyRequest:
+      type: object
+      required:
+        - name
+      properties:
+        name:
+          type: string
+          description: The API key name.
+        permission:
+          type: string
+          enum:
+            - full_access
+            - sending_access
+          description: The API key can have full access to Resend’s API or be only restricted to send emails. * full_access - Can create, delete, get, and update any resource. * sending_access - Can only send emails.
+        domain_id:
+          type: string
+          description: Restrict an API key to send emails only from a specific domain. Only used when the permission is sending_acces.
+    CreateApiKeyResponse:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The ID of the API key.
+        token:
+          type: string
+          description: The token of the API key.
+    ListApiKeysResponse:
+      type: object
+      properties:
+        data:
+          type: array
+          items:
+            $ref: '#/components/schemas/ApiKey'
+    ApiKey:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The ID of the API key.
+        name:
+          type: string
+          description: The name of the API key.
+        created_at:
+          type: string
+          format: date-time
+          description: The date and time the API key was created.
