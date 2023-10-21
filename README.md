@@ -7,15 +7,15 @@
 </div>
 
 <!-- Start SDK Installation -->
-# SDK Installation
+## SDK Installation
 
-## NPM
+### NPM
 
 ```bash
 npm add https://github.com/speakeasy-sdks/Reeesending
 ```
 
-## Yarn
+### Yarn
 
 ```bash
 yarn add https://github.com/speakeasy-sdks/Reeesending
@@ -24,8 +24,6 @@ yarn add https://github.com/speakeasy-sdks/Reeesending
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
-
-
 ```typescript
 import { Reeesending } from "Reeesending";
 
@@ -35,7 +33,7 @@ import { Reeesending } from "Reeesending";
     });
 
     const res = await sdk.apiKeys.deleteApiKeysApiKeyId({
-        apiKeyId: "transmitting",
+        apiKeyId: "string",
     });
 
     if (res.statusCode == 200) {
@@ -47,10 +45,10 @@ import { Reeesending } from "Reeesending";
 <!-- End SDK Example Usage -->
 
 <!-- Start SDK Available Operations -->
-# Available Resources and Operations
+## Available Resources and Operations
 
 
-## [apiKeys](docs/sdks/apikeys/README.md)
+### [apiKeys](docs/sdks/apikeys/README.md)
 
 * [deleteApiKeysApiKeyId](docs/sdks/apikeys/README.md#deleteapikeysapikeyid) - Remove an existing API key
 * [getApiKeys](docs/sdks/apikeys/README.md#getapikeys) - Retrieve a list of API keys
@@ -58,8 +56,6 @@ import { Reeesending } from "Reeesending";
 <!-- End SDK Available Operations -->
 
 <!-- Start Dev Containers -->
-
-
 
 <!-- End Dev Containers -->
 

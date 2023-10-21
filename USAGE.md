@@ -10,7 +10,7 @@ import { Reeesending } from "Reeesending";
     });
 
     const res = await sdk.apiKeys.deleteApiKeysApiKeyId({
-        apiKeyId: "transmitting",
+        apiKeyId: "string",
     });
 
     if (res.statusCode == 200) {

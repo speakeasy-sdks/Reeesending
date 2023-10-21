@@ -26,7 +26,7 @@ import { Reeesending } from "Reeesending";
   });
 
   const res = await sdk.apiKeys.deleteApiKeysApiKeyId({
-    apiKeyId: "transmitting",
+    apiKeyId: "string",
   });
 
   if (res.statusCode == 200) {
@@ -98,7 +98,7 @@ import { CreateApiKeyRequestPermission } from "Reeesending/dist/sdk/models/share
   });
 
   const res = await sdk.apiKeys.postApiKeys({
-    name: "whose",
+    name: "string",
   });
 
   if (res.statusCode == 200) {
