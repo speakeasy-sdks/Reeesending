@@ -22,14 +22,14 @@ tsconfig.json
 src/sdk/models/operations/deleteapikeysapikeyid.ts
 src/sdk/models/operations/getapikeys.ts
 src/sdk/models/operations/postapikeys.ts
-src/sdk/models/operations/index.ts
 src/sdk/models/shared/listapikeysresponse.ts
 src/sdk/models/shared/apikey.ts
 src/sdk/models/shared/createapikeyresponse.ts
 src/sdk/models/shared/createapikeyrequest.ts
 src/sdk/models/shared/security.ts
-src/sdk/models/shared/index.ts
 src/sdk/models/errors/index.ts
+src/sdk/models/operations/index.ts
+src/sdk/models/shared/index.ts
 USAGE.md
 docs/models/operations/deleteapikeysapikeyidrequest.md
 docs/models/operations/deleteapikeysapikeyidresponse.md
@@ -38,7 +38,7 @@ docs/models/operations/postapikeysresponse.md
 docs/models/shared/listapikeysresponse.md
 docs/models/shared/apikey.md
 docs/models/shared/createapikeyresponse.md
-docs/models/shared/createapikeyrequestpermission.md
+docs/models/shared/permission.md
 docs/models/shared/createapikeyrequest.md
 docs/models/shared/security.md
 docs/sdks/reeesending/README.md

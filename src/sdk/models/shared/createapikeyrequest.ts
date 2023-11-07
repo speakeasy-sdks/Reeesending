@@ -8,7 +8,7 @@ import { Expose } from "class-transformer";
 /**
  * The API key can have full access to Resend’s API or be only restricted to send emails. * full_access - Can create, delete, get, and update any resource. * sending_access - Can only send emails.
  */
-export enum CreateApiKeyRequestPermission {
+export enum Permission {
     FullAccess = "full_access",
     SendingAccess = "sending_access",
 }
@@ -33,5 +33,5 @@ export class CreateApiKeyRequest extends SpeakeasyBase {
      */
     @SpeakeasyMetadata()
     @Expose({ name: "permission" })
-    permission?: CreateApiKeyRequestPermission;
+    permission?: Permission;
 }

@@ -1,5 +1,5 @@
 # APIKeys
-(*apiKeys*)
+(*.apiKeys*)
 
 ## Overview
 
@@ -28,6 +28,7 @@ import { Reeesending } from "Reeesending";
   const res = await sdk.apiKeys.deleteApiKeysApiKeyId({
     apiKeyId: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
@@ -64,6 +65,7 @@ import { Reeesending } from "Reeesending";
 
   const res = await sdk.apiKeys.getApiKeys();
 
+
   if (res.statusCode == 200) {
     // handle response
   }
@@ -90,7 +92,7 @@ Create a new API key
 
 ```typescript
 import { Reeesending } from "Reeesending";
-import { CreateApiKeyRequestPermission } from "Reeesending/dist/sdk/models/shared";
+import { Permission } from "Reeesending/dist/sdk/models/shared";
 
 (async() => {
   const sdk = new Reeesending({
@@ -100,6 +102,7 @@ import { CreateApiKeyRequestPermission } from "Reeesending/dist/sdk/models/share
   const res = await sdk.apiKeys.postApiKeys({
     name: "string",
   });
+
 
   if (res.statusCode == 200) {
     // handle response
