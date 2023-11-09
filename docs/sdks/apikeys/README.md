@@ -1,5 +1,5 @@
 # APIKeys
-(*.apiKeys*)
+(*apiKeys*)
 
 ## Overview
 
@@ -29,7 +29,6 @@ import { Reeesending } from "Reeesending";
     apiKeyId: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -38,16 +37,20 @@ import { Reeesending } from "Reeesending";
 
 ### Parameters
 
-| Parameter                                                                                          | Type                                                                                               | Required                                                                                           | Description                                                                                        |
-| -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| `request`                                                                                          | [operations.DeleteApiKeysApiKeyIdRequest](../../models/operations/deleteapikeysapikeyidrequest.md) | :heavy_check_mark:                                                                                 | The request object to use for the request.                                                         |
-| `config`                                                                                           | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                       | :heavy_minus_sign:                                                                                 | Available config options for making requests.                                                      |
+| Parameter                                                                                              | Type                                                                                                   | Required                                                                                               | Description                                                                                            |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| `request`                                                                                              | [operations.DeleteApiKeysApiKeyIdRequest](../../sdk/models/operations/deleteapikeysapikeyidrequest.md) | :heavy_check_mark:                                                                                     | The request object to use for the request.                                                             |
+| `config`                                                                                               | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                                           | :heavy_minus_sign:                                                                                     | Available config options for making requests.                                                          |
 
 
 ### Response
 
-**Promise<[operations.DeleteApiKeysApiKeyIdResponse](../../models/operations/deleteapikeysapikeyidresponse.md)>**
+**Promise<[operations.DeleteApiKeysApiKeyIdResponse](../../sdk/models/operations/deleteapikeysapikeyidresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## getApiKeys
 
@@ -65,7 +68,6 @@ import { Reeesending } from "Reeesending";
 
   const res = await sdk.apiKeys.getApiKeys();
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -81,8 +83,12 @@ import { Reeesending } from "Reeesending";
 
 ### Response
 
-**Promise<[operations.GetApiKeysResponse](../../models/operations/getapikeysresponse.md)>**
+**Promise<[operations.GetApiKeysResponse](../../sdk/models/operations/getapikeysresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
 
 ## postApiKeys
 
@@ -103,7 +109,6 @@ import { Permission } from "Reeesending/dist/sdk/models/shared";
     name: "string",
   });
 
-
   if (res.statusCode == 200) {
     // handle response
   }
@@ -112,13 +117,17 @@ import { Permission } from "Reeesending/dist/sdk/models/shared";
 
 ### Parameters
 
-| Parameter                                                                | Type                                                                     | Required                                                                 | Description                                                              |
-| ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------------------------------------ |
-| `request`                                                                | [shared.CreateApiKeyRequest](../../models/shared/createapikeyrequest.md) | :heavy_check_mark:                                                       | The request object to use for the request.                               |
-| `config`                                                                 | [AxiosRequestConfig](https://axios-http.com/docs/req_config)             | :heavy_minus_sign:                                                       | Available config options for making requests.                            |
+| Parameter                                                                    | Type                                                                         | Required                                                                     | Description                                                                  |
+| ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| `request`                                                                    | [shared.CreateApiKeyRequest](../../sdk/models/shared/createapikeyrequest.md) | :heavy_check_mark:                                                           | The request object to use for the request.                                   |
+| `config`                                                                     | [AxiosRequestConfig](https://axios-http.com/docs/req_config)                 | :heavy_minus_sign:                                                           | Available config options for making requests.                                |
 
 
 ### Response
 
-**Promise<[operations.PostApiKeysResponse](../../models/operations/postapikeysresponse.md)>**
+**Promise<[operations.PostApiKeysResponse](../../sdk/models/operations/postapikeysresponse.md)>**
+### Errors
 
+| Error Object    | Status Code     | Content Type    |
+| --------------- | --------------- | --------------- |
+| errors.SDKError | 400-600         | */*             |
