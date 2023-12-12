@@ -30,7 +30,6 @@ src/sdk/models/shared/security.ts
 src/sdk/models/errors/index.ts
 src/sdk/models/operations/index.ts
 src/sdk/models/shared/index.ts
-USAGE.md
 docs/sdk/models/operations/deleteapikeysapikeyidrequest.md
 docs/sdk/models/operations/deleteapikeysapikeyidresponse.md
 docs/sdk/models/operations/getapikeysresponse.md
@@ -43,4 +42,5 @@ docs/sdk/models/shared/createapikeyrequest.md
 docs/sdk/models/shared/security.md
 docs/sdks/reeesending/README.md
 docs/sdks/apikeys/README.md
+USAGE.md
 .gitattributes

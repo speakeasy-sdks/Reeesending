@@ -20,9 +20,9 @@ Remove an existing API key
 ```typescript
 import { Reeesending } from "Reeesending";
 
-(async() => {
+async function run() {
   const sdk = new Reeesending({
-    bearerAuth: "",
+    bearerAuth: "<YOUR_BEARER_TOKEN_HERE>",
   });
 
   const res = await sdk.apiKeys.deleteApiKeysApiKeyId({
@@ -32,7 +32,9 @@ import { Reeesending } from "Reeesending";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -61,9 +63,9 @@ Retrieve a list of API keys
 ```typescript
 import { Reeesending } from "Reeesending";
 
-(async() => {
+async function run() {
   const sdk = new Reeesending({
-    bearerAuth: "",
+    bearerAuth: "<YOUR_BEARER_TOKEN_HERE>",
   });
 
   const res = await sdk.apiKeys.getApiKeys();
@@ -71,7 +73,9 @@ import { Reeesending } from "Reeesending";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
@@ -100,9 +104,9 @@ Create a new API key
 import { Reeesending } from "Reeesending";
 import { Permission } from "Reeesending/dist/sdk/models/shared";
 
-(async() => {
+async function run() {
   const sdk = new Reeesending({
-    bearerAuth: "",
+    bearerAuth: "<YOUR_BEARER_TOKEN_HERE>",
   });
 
   const res = await sdk.apiKeys.postApiKeys({
@@ -112,7 +116,9 @@ import { Permission } from "Reeesending/dist/sdk/models/shared";
   if (res.statusCode == 200) {
     // handle response
   }
-})();
+}
+
+run();
 ```
 
 ### Parameters
