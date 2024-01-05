@@ -1,0 +1,64 @@
+lockVersion: 2.0.0
+id: 6e1e9f8f-d925-4d5d-9e8f-a8efe7f5c448
+management:
+  docChecksum: 84a8678081a4a01dca4e437c7e095a77
+  docVersion: 1.0.0
+  speakeasyVersion: internal
+  generationVersion: 2.225.2
+  releaseVersion: 0.5.1
+  configChecksum: 56e4857cee220bbc4615c908b4a3da4b
+  repoURL: https://github.com/speakeasy-sdks/Reeesending.git
+  repoSubDirectory: .
+  installationURL: https://github.com/speakeasy-sdks/Reeesending
+features:
+  typescript:
+    core: 3.4.1
+    globalSecurity: 2.82.2
+    globalServerURLs: 2.82.1
+generatedFiles:
+  - src/sdk/apikeys.ts
+  - src/sdk/sdk.ts
+  - .eslintrc.yml
+  - jest.config.js
+  - package-lock.json
+  - package.json
+  - src/index.ts
+  - src/internal/utils/contenttype.ts
+  - src/internal/utils/headers.ts
+  - src/internal/utils/index.ts
+  - src/internal/utils/pathparams.ts
+  - src/internal/utils/queryparams.ts
+  - src/internal/utils/requestbody.ts
+  - src/internal/utils/retries.ts
+  - src/internal/utils/security.ts
+  - src/internal/utils/utils.ts
+  - src/sdk/index.ts
+  - src/sdk/models/errors/sdkerror.ts
+  - src/sdk/types/index.ts
+  - src/sdk/types/rfcdate.ts
+  - tsconfig.json
+  - src/sdk/models/operations/deleteapikeysapikeyid.ts
+  - src/sdk/models/operations/getapikeys.ts
+  - src/sdk/models/operations/postapikeys.ts
+  - src/sdk/models/shared/listapikeysresponse.ts
+  - src/sdk/models/shared/apikey.ts
+  - src/sdk/models/shared/createapikeyresponse.ts
+  - src/sdk/models/shared/createapikeyrequest.ts
+  - src/sdk/models/shared/security.ts
+  - src/sdk/models/errors/index.ts
+  - src/sdk/models/operations/index.ts
+  - src/sdk/models/shared/index.ts
+  - docs/sdk/models/operations/deleteapikeysapikeyidrequest.md
+  - docs/sdk/models/operations/deleteapikeysapikeyidresponse.md
+  - docs/sdk/models/operations/getapikeysresponse.md
+  - docs/sdk/models/operations/postapikeysresponse.md
+  - docs/sdk/models/shared/listapikeysresponse.md
+  - docs/sdk/models/shared/apikey.md
+  - docs/sdk/models/shared/createapikeyresponse.md
+  - docs/sdk/models/shared/permission.md
+  - docs/sdk/models/shared/createapikeyrequest.md
+  - docs/sdk/models/shared/security.md
+  - docs/sdks/reeesending/README.md
+  - docs/sdks/apikeys/README.md
+  - USAGE.md
+  - .gitattributes
