@@ -36,7 +36,7 @@ async function run() {
     });
 
     const res = await sdk.apiKeys.deleteApiKeysApiKeyId({
-        apiKeyId: "string",
+        apiKeyId: "<value>",
     });
 
     if (res.statusCode == 200) {
@@ -83,7 +83,7 @@ async function run() {
     let res;
     try {
         res = await sdk.apiKeys.deleteApiKeysApiKeyId({
-            apiKeyId: "string",
+            apiKeyId: "<value>",
         });
     } catch (err) {
         if (err instanceof errors.SDKError) {
@@ -127,7 +127,7 @@ async function run() {
     });
 
     const res = await sdk.apiKeys.deleteApiKeysApiKeyId({
-        apiKeyId: "string",
+        apiKeyId: "<value>",
     });
 
     if (res.statusCode == 200) {
@@ -153,7 +153,7 @@ async function run() {
     });
 
     const res = await sdk.apiKeys.deleteApiKeysApiKeyId({
-        apiKeyId: "string",
+        apiKeyId: "<value>",
     });
 
     if (res.statusCode == 200) {
@@ -210,7 +210,7 @@ async function run() {
     });
 
     const res = await sdk.apiKeys.deleteApiKeysApiKeyId({
-        apiKeyId: "string",
+        apiKeyId: "<value>",
     });
 
     if (res.statusCode == 200) {

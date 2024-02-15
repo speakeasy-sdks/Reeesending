@@ -4,15 +4,15 @@ management:
   docChecksum: 84a8678081a4a01dca4e437c7e095a77
   docVersion: 1.0.0
   speakeasyVersion: internal
-  generationVersion: 2.225.2
-  releaseVersion: 0.5.1
-  configChecksum: 56e4857cee220bbc4615c908b4a3da4b
+  generationVersion: 2.258.2
+  releaseVersion: 0.5.2
+  configChecksum: 27692294235b1e7abfdacb0f9d1f0b7b
   repoURL: https://github.com/speakeasy-sdks/Reeesending.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/Reeesending
 features:
   typescript:
-    core: 3.4.1
+    core: 3.4.7
     globalSecurity: 2.82.2
     globalServerURLs: 2.82.1
 generatedFiles:

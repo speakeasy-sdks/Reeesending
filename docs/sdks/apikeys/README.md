@@ -26,7 +26,7 @@ async function run() {
   });
 
   const res = await sdk.apiKeys.deleteApiKeysApiKeyId({
-    apiKeyId: "string",
+    apiKeyId: "<value>",
   });
 
   if (res.statusCode == 200) {
@@ -110,7 +110,7 @@ async function run() {
   });
 
   const res = await sdk.apiKeys.postApiKeys({
-    name: "string",
+    name: "<value>",
   });
 
   if (res.statusCode == 200) {
