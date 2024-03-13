@@ -1,6 +1,6 @@
 {
   "name": "Reeesending",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "author": "vimal",
   "scripts": {
     "prepare": "tsc --build",
