@@ -3,17 +3,17 @@ id: 6e1e9f8f-d925-4d5d-9e8f-a8efe7f5c448
 management:
   docChecksum: 84a8678081a4a01dca4e437c7e095a77
   docVersion: 1.0.0
-  speakeasyVersion: 1.207.1
-  generationVersion: 2.280.6
-  releaseVersion: 0.5.3
-  configChecksum: cb0e32b29ecf30580b50d8843cab9fc4
+  speakeasyVersion: 1.213.0
+  generationVersion: 2.283.1
+  releaseVersion: 0.5.4
+  configChecksum: 139bba336420c2ea5bdbe3b64f678daf
   repoURL: https://github.com/speakeasy-sdks/Reeesending.git
   repoSubDirectory: .
   installationURL: https://github.com/speakeasy-sdks/Reeesending
 features:
   typescript:
     core: 3.4.8
-    globalSecurity: 2.82.4
+    globalSecurity: 2.82.5
     globalServerURLs: 2.82.2
 generatedFiles:
   - src/sdk/apikeys.ts
